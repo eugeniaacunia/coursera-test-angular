@@ -1,0 +1,8 @@
+<ol>
+  <li ng-repeat= "item in menu.found">
+    <br>
+    Name: {{item.name}}, Short name: {{item.short_name}}, Description : {{item.description}}
+    <button ng-click="menu.onRemove({index: $index});">Don't want this one!</button>
+  </li>
+</ol>
+<!-- <div class="error" ng-if="menu.cookiesInList()">WARNING! WARNING! COOKIES DETECTED!</div> -->
